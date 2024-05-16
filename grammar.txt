@@ -1,0 +1,9 @@
+<program> ::= <statement> (";" <statement>)* ";"
+
+<statement> ::= <assignment_statement> | <expression>
+
+<assignment_statement> ::= IDENTIFIER "=" <expression>
+
+<expression> ::= <term> | <expression> ("+" | "-" | "*" | "/") <term>
+
+<term> ::= IDENTIFIER | NUMBER | "(" <expression> ")"
